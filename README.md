@@ -18,5 +18,14 @@ This dataset includes several months of data on daily trending YouTube videos. D
 The randomly selected 30000 rows of the data from US region is used for this project.
 
 ## Results
+Supervised Learning:  
+Before Hyperparameter Optimization, the accuracy score was 96.25% but precision, recall and F1 scores was very low, indicating that the model struggles to detect high engagement videos, likely due to class imbalance.  
+After Hyperparameter Optimization, there is a slight improvement in accuracy, precision and recall scores but class imbalance remains a challenge for the model.  
+
+Unsupervised Learning:  
+The Silhouette Score of 0.792 and Inertia show that the clusters are well-defined, compact and well-formed within themselves.
+The Davies-Bouldin Index of 0.749 suggests there is moderate separation between the clusters.  
+The low values of ARI, Homogeneity, Completeness, and V-Measure indicate that the clusters do not strongly reflect any underlying true categories (which may be expected in purely unsupervised tasks).  
+This means the K-Means model finds meaningful clusters, though they don't align perfectly to predefined labels (such as "high engagement").   
 
 Here is the link for Kaggle notebook: : https://www.kaggle.com/code/cigdemyasar/aygazml-trending-youtube
