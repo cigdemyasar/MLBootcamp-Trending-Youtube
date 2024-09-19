@@ -9,6 +9,7 @@ In the unsupervised learning part, the model is grouping (clustering) videos bas
 
 ## Implementation
 When implying supervised learning to dataset, logistic regression algorithm is used to predict whether a video has high engagement or not based on the engagement score. The engagement score is calculated as sum of likes and comments divided by views, which is choosen arbitrarly for this project. In summary, the model is classifying videos as high engagement or not based on the numbers of likes, dislikes, comments and whether the comments and ratings are disabled or not.
+For optimization of hyperparameters, the Randomized Search algorithm is choosen since it worked better than the Grid Search for this dataset.  
 
 The unsupervised clustering model includes K-Means Clustering algorithm. The model assign videon on clusters based on some common characteristics without knowing ahead of time whether they have high engagement or not.
 
